@@ -1,0 +1,7 @@
+/////////////////////提交文件
+git clone https://github.com/lize1516/git_test.git
+mv tmp.c git_test/
+cd git_test/
+git add tmp.c
+git commit -m "tmp"
+git push
