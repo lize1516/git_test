@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> 我的网页 </title>
+	<style>
+		body{text-align:center}
+	</style>
+</head>
+
+<body style="background-color:PowderBlue;">
+
+<p style="font-family:times;color:green">
+录入信息</p>
+
+<form action="/cgi/bin/insert" method="get">
+姓名：
+<input type="text" name="name" value="lisi">
+<br>
+学号：
+<input type="text" name="num" value="201512030324">
+<br>
+性别：
+<input type="text" name="sex" value="man">
+<br>
+电话：
+<input type="text" name="phone" value="13789093421">
+<br><br>
+<input type="submit" value="录入信息"> 
+</form> 
+&nbsp;&nbsp;
+<form action="/cgi/bin/select" method="post">
+<input type="submit" value="查看信息"> 
+</form> 
+<b>----------------------------------------------------------------------------------------------</b>
+<br>
+<p style="font-family:times;color:green">
+删除指定的信息</p>
+<form action="/cgi/bin/delete" method="post">
+姓名：
+<input type="text" name="name" value="lisi">
+&nbsp;&nbsp;
+学号：
+<input type="text" name="num" value="201512030324">
+<br><br>
+<input type="submit" value="删除指定的信息"> 
+</form> 
+<b>----------------------------------------------------------------------------------------------</b>
+<p style="font-family:times;color:green">
+修改信息</p>
+
+<form action="/cgi/bin/update" method="get">
+姓名：
+<input type="text" name="name" value="lisi">
+<br>
+学号：
+<input type="text" name="num" value="201512030324">
+<br>
+性别：
+<input type="text" name="sex" value="man">
+<br>
+电话：
+<input type="text" name="phone" value="13789093421">
+<br><br>
+<input type="submit" value="修改指定学号的信息"> 
+</form> 
+
+<b>----------------------------------------------------------------------------------------------</b>
+<p style="font-family:times;color:green">
+一个简单的计算器 </p>
+<form action="/cgi/bin/net_cal" method="get">
+num1:
+<input type="text" name="num1" value="100">
+&nbsp;&nbsp;
+num2:
+<input type="text" name="num2" value="200">
+<br><br>
+<input type="submit" value="提交"> 
+</form> 
+
+<b>----------------------------------------------------------------------------------------------</b>
+<br> 
+<a href="http://www.baidu.com/"> 百度 </a>
+ &nbsp;
+ <a href="http://www.w3school.com.cn/"> w3c</a>
+ &nbsp;
+ <a href="http://123.207.58.25/"> 比特科技 </a>
+ &nbsp;
+ <br />
+
+<!--
+<video width="500" height="400" controls="controls" autoplay="autoplay">
+  <source src="/i/movie.ogg" type="video/ogg" />
+    <source src="/i/movie.mp4" type="video/mp4" />
+      <source src="/i/movie.webm" type="video/webm" />
+        <object data="/i/movie.mp4" width="500" height="400">
+            <embed width="500" height="400" src="/i/movie.swf" />
+              </object>
+ </video>
+ -->
+
+<br />
+<img src="/imag/panda.jpg" width="200" height="150" alt="picture1">
+<img src="/imag/pic.jpg" width="200" height="150" alt="picture2">
+<img src="/imag/songshu.jpg" width="200" height="150" alt="picture3">
+
+</body>
+</html>
+
